@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/src/imagens/Logo_Florissima-removebg-preview.png"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nossa Equipe</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/css/style-home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <section class="top-header">
+        <div class="interface">
+          <div class="logo">
+            <a href="/index.html">
+              <img
+                src="/src/imagens/Logo_Florissima-removebg-preview.png"
+                alt="Floríssima"
+              />
+            </a>
+          </div>
+
+          <div class="search">
+            <label for="">
+              <span class="material-symbols-outlined">search</span>
+            </label>
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="O que você procura?"
+            />
+          </div>
+
+          <div class="login-tab">
+            <div class="log-icon">
+              <a href="/Branchs/LogIn.html">
+                <img src="/src/imagens/loginIcon3.jpg" alt="login" />
+              </a>
+            </div>
+            <div class="log-text">
+              <a href="/Branchs/LogIn.html"
+                ><p>
+                  Login ou <br />
+                  Cadastre-se
+                </p></a
+              >
+            </div>
+          </div>
+
+          <div class="flags">
+            <div class="brazil-flag">
+              <img id="brazil" src="/src/imagens/brazil.png" alt="" />
+            </div>
+            <div class="usa-flag">
+              <img
+                id="usa"
+                src="/src/imagens/united-states-of-america.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="fontZoom" onclick="fontZoom()">
+            <i class="fa-solid fa-font"></i>
+          </div>
+
+          <div class="trilho" id="trilho">
+            <div class="indicador"></div>
+          </div>
+
+          <div class="cart-icon" onclick="toggleCart(true)">
+            <i class="fa fa-shopping-cart"></i>
+            <span id="cart-count">0</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="bottom-header">
+        <div class="interface">
+          <nav>
+            <ul>
+              <li><a href="/index.html#home-destaques">Destaques</a></li>
+
+              <li><a href="/Branchs/floresTropicais.html">Flores Tropicais</a></li>
+
+              <li class="drop-hover">
+                <a href="/Branchs/assinaturas.html">Assinaturas Florais</a>
+              </li>
+
+              <li class="drop-hover">
+                <a href="/Branchs/presentes.html">Presentes Especiais</a>
+                <div class="drop">
+                  <a href="/Branchs/presentes.html">Flores c/ Bebidas</a>
+                  <a href="/Branchs/presentes.html">Flores c/ Chocolate</a>
+                  <a href="/Branchs/presentes.html">Flores c/ Pelúcia</a>
+                </div>
+              </li>
+
+              <li class="drop-hover">
+                <a href="/Branchs/arranjos.html">Arranjos</a>
+                <div class="drop">
+                  <a href="/Branchs/arranjos.html">Interior</a>
+                  <a href="/Branchs/arranjos.html">Eventos</a>
+                </div>
+              </li>
+
+              <li class="drop-hover">
+                <a href="/Branchs/buques.html">Buquês</a>
+                <div class="drop">
+                  <a href="/Branchs/buques.html">Aniversário</a>
+                  <a href="/Branchs/buques.html">de Noiva</a>
+                  <a href="/Branchs/buques.html">Romântico</a>
+                </div>
+              </li>
+
+              <li><a href="/Branchs/faleConosco.html">Fale Conosco</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+    </header>
+
+    <section class="founders-section">
+      <h1>NOSSA EQUIPE</h1>
+      <div class="founders-container">
+        <div class="founder">
+          <div class="founder-img">
+            <img src="/src/imagens/founders/Emilly.jpg" alt="">
+          </div>
+          <h3>Emilly Ialy Nunes Mineo</h3>
+          <p>Fundadora e Estudante</p>
+          <div class="founder-socials">
+            <a href="https://www.instagram.com/emillyialy?igsh=MWdweHpoNnY2dDM4&utm_source=qr" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/emilly-ialy-0b1093329/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/emillyialy" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+          <p class="phone">Telefone: +55 81 9455-3980</p>
+        </div>
+
+        <div class="founder">
+          <div class="founder-img">
+            <img src="/src/imagens/founders/Caruaru.jpg" alt="">
+          </div>
+          <h3>Guilherme Amorim de Castro</h3>
+          <p>Fundador e Estudante</p>
+          <div class="founder-socials">
+            <a href="https://www.instagram.com/gu1_amorim?igsh=cGxrYnUzdTlvZXFj" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+          <p class="phone">Telefone: +55 81 98742-0416</p>
+        </div>
+
+        <div class="founder">
+          <div class="founder-img">
+            <img src="/src/imagens/founders/João.jpg" alt="">
+          </div>
+          <h3>João Vitor Costa Praxedes</h3>
+          <p>Fundador e Estudante</p>
+          <div class="founder-socials">
+            <a href="https://www.instagram.com/jayp_38/" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/joão-costa-praxedes/" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/JayVPX" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+          <p class="phone">Telefone: +55 81 99683-9028</p>
+        </div>
+
+        <div class="founder">
+          <div class="founder-img">
+            <img src="/src/imagens/founders/Jhon.jpg" alt="">
+          </div>
+          <h3>Jhonata Gabriel da Silva</h3>
+          <p>Fundador e Estudante</p>
+          <div class="founder-socials">
+            <a href="https://www.instagram.com/jhon.gs7?igsh=bmNvbnd1dG5sZnp1&utm_source=qr" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://br.linkedin.com/in/jhonata-silva-8b9a562b7 " target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/jhongs7" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+          <p class="phone">Telefone: +55 81 98692-9494</p>
+        </div>
+
+        <div class="founder">
+          <div class="founder-img">
+            <img src="/src/imagens/founders/Kaio.png" alt="">
+          </div>
+          <h3>Kaio Oliveira Seabra de Carvalho</h3>
+          <p>Fundador e Estudante</p>
+          <div class="founder-socials">
+            <a href="https://www.instagram.com/kaio.seabraa._/" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/kaio-oliveira-s-285452308/" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/KaiSeabra" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+          <p class="phone">Telefone: +55 81 98593-2808</p>
+        </div>
+
+        <div class="founder">
+          <div class="founder-img">
+            <img src="/src/imagens/founders/Larissa.jfif" alt="">
+          </div>
+          <h3>Larissa Angelote Firmino</h3>
+          <p>Fundadora e Estudante</p>
+          <div class="founder-socials">
+            <a href="https://www.instagram.com/laangelote?igsh=Zjlxc25jNWI2cWVm" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/larissa-angelote-986936302/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/elarilarie" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+          <p class="phone">Telefone: +55 81 98896-3479</p>
+        </div>
+
+        <div class="founder">
+          <div class="founder-img">
+            <img src="/src/imagens/founders/França.jpg" alt="">
+          </div>
+          <h3>Miguel Andrade França dos Santos</h3>
+          <p>Fundador e Estudante</p>
+          <div class="founder-socials">
+            <a href=" https://www.instagram.com/migeu.u?igsh=cWplaTN3dHMxa2I5" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/miguel-frança-5b0459275/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/Miguelfranca0" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+          <p class="phone">Telefone: +55 81 98825-7577</p>
+        </div>
+
+        <div class="founder">
+          <div class="founder-img">
+            <img src="/src/imagens/founders/Othon.jpg" alt="">
+          </div>
+          <h3>Miguel Othon Araújo Barbosa</h3>
+          <p>Fundador e Estudante</p>
+          <div class="founder-socials">
+            <a href="https://www.instagram.com/mgl_othon/" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/miguel-othon-04bb09198?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/miguelotth " target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+          <p class="phone">Telefone: +55 81 98876-0746</p>
+        </div>
+
+        <div class="founder">
+          <div class="founder-img">
+            <img src="/src/imagens/founders/Carneiro.jpg" alt="">
+          </div>
+          <h3>Pedro Henrique Carneiro Vasconcelos</h3>
+          <p>Fundador e Estudante</p>
+          <div class="founder-socials">
+            <a href="https://www.instagram.com/ph.carneiroo/" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://github.com/fundador2" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/pedro-carneiro-b30270318/" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+          <p class="phone">Telefone: +55 81 99499-1194</p>
+        </div>
+
+        <div class="founder">
+          <div class="founder-img">
+            <img src="/src/imagens/founders/Vitor.jpg" alt="">
+          </div>
+          <h3>Vitor Queiroz Guerra</h3>
+          <p>Fundador e Estudante</p>
+          <div class="founder-socials">
+            <a href="https://www.instagram.com/vitorqguerra/" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/vitor-queiroz-guerra-58b5551b3/" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/VitorBionic" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+          <p class="phone">Telefone: +55 81 99846-9546</p>
+        </div>
+
+    </section>
+
+    <div id="modal-background-cart">
+      <div class="cart" id="cart">
+        <i class="fas fa-times" onclick="toggleCart(false)"></i>
+        <h3>Carrinho de Compras</h3>
+        <ul id="cart-items"></ul>
+        <p>Total: R$ <span id="cart-total">0.00</span></p>
+        <div class="buttonsCart">
+          <button type="button" onclick="clearCart()">Limpar Carrinho</button>
+          <button type="button" onclick="checkout()">Finalizar</button>
+        </div>
+      </div>
+    </div>
+
+    
+    <footer>
+      <section class="top-footer">
+        <h1>FORMAS DE PAGAMENTO</h1>
+        <div class="formas-pag">
+          <img
+            src="/src/imagens/imagem_2024-11-24_215112298-removebg-preview.png"
+            alt="hipercard"
+            class="hipercard"
+          />
+          <img
+            src="/src/imagens/mastercard-removebg-preview.png"
+            alt="mastercard"
+            class="mastercard"
+          />
+          <img src="/src/imagens/visa_png-removebg-preview.png" alt="visa" />
+          <img src="/src/imagens/pix_png-removebg-preview.png" alt="pix" />
+          <img
+            src="/src/imagens/boleto_png-removebg-preview.png"
+            alt="boleto"
+          />
+        </div>
+      </section>
+      <hr />
+
+      <section class="bottom-footer">
+        <div class="logo-footer">
+          <a href="#">
+            <img
+              src="/src/imagens/Logo_Florissima-removebg-preview.png"
+              alt="logo rodapé"
+            />
+          </a>
+        </div>
+
+        <div class="footer-right">
+          <div class="footer-info">
+            <div class="parceiros">
+              <h3>Parceiros</h3>
+              <a href="#"> <p>Cooperativa Aldeia</p> </a>
+              <a href="https://www.novaflor.com.br" target="_blank">
+                <p>Floricultura Nova Flor</p>
+              </a>
+              <a href="https://www.giulianaflores.com.br" target="_blank">
+                <p>Giuliana Flores</p>
+              </a>
+              <a href="https://www.moradadapaz.com.br" target="_blank">
+                <p>Morada da Paz</p>
+              </a>
+            </div>
+            <div class="footer-links">
+              <h3>Links</h3>
+              <a href="/Branchs/equipe.html"> <p>Nossa Equipe</p> </a>
+              <a href="/Branchs/faleConosco.html"> <p>Contato</p> </a>
+              <a href="/Branchs/termosUso.html"> <p>Termos de Uso</p> </a>
+              <a href="/Branchs/privacidade.html">
+                <p>Política de Privacidade</p>
+              </a>
+            </div>
+          </div>
+          <div class="footer-socials">
+            <h3>Siga-nos</h3>
+            <ul class="redes-sociais">
+              <li>
+                <a
+                  href="https://www.facebook.com"
+                  title="Vá para o nosso Facebook"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.instagram.com"
+                  title="Vá para o nosso Instagram"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.youtube.com"
+                  title="Vá para o nosso Youtube"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </footer>
+    
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+    <script
+      src="https://kit.fontawesome.com/146c12905d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/src/js/script.js" defer></script>
+  </body>
+</html>

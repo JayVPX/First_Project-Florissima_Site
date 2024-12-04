@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../src/css/style.loginADM.css"
+    />
+    <title>Login - Florissima</title>
+  </head>
+  <body>
+    <section class="loginADM-body">
+      <div id="container">
+        <img
+          src="../src/imagens/Logo_Florissima-removebg-preview.png"
+          alt="Florissima"
+        />
+        <form>
+          <label for="user">Insira o seu ID</label><br />
+          <input type="text" id="user" required autofocus />
+          <label for="user">Senha</label><br />
+          <input type="password" id="password" required />
+          <input type="checkbox" id="remember" />
+          <p>Lembrar-me</p>
+          <div style="clear: left"></div>
+          <a href="/index.html"
+            ><input type="submit" id="submit" value="Entrar"
+          /></a>
+        </form>
+      </div>
+    </section>
+
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+    <script>
+      const frm = document.querySelector("form");
+
+      frm.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        window.location.href = "/index.html";
+      });
+    </script>
+  </body>
+</html>

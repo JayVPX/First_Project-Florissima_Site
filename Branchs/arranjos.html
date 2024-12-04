@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/src/imagens/Logo_Florissima-removebg-preview.png"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arranjos</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=search"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/css/style-home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <section class="top-header">
+        <div class="interface">
+          <div class="logo">
+            <a href="/index.html">
+              <img
+                src="/src/imagens/Logo_Florissima-removebg-preview.png"
+                alt="Floríssima"
+              />
+            </a>
+          </div>
+
+          <div class="search">
+            <label for="">
+              <span class="material-symbols-outlined">search</span>
+            </label>
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="O que você procura?"
+            />
+          </div>
+
+          <div class="login-tab">
+            <div class="log-icon">
+              <a href="/Branchs/LogIn.html">
+                <img src="/src/imagens/loginIcon3.jpg" alt="login" />
+              </a>
+            </div>
+            <div class="log-text">
+              <a href="/Branchs/LogIn.html"
+                ><p>
+                  Login ou <br />
+                  Cadastre-se
+                </p></a
+              >
+            </div>
+          </div>
+
+          <div class="flags">
+            <div class="brazil-flag">
+              <img id="brazil" src="/src/imagens/brazil.png" alt="" />
+            </div>
+            <div class="usa-flag">
+              <img
+                id="usa"
+                src="/src/imagens/united-states-of-america.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="fontZoom" onclick="fontZoom()">
+            <i class="fa-solid fa-font"></i>
+          </div>
+
+          <div class="trilho" id="trilho">
+            <div class="indicador"></div>
+          </div>
+
+          <div class="cart-icon" onclick="toggleCart(true)">
+            <i class="fa fa-shopping-cart"></i>
+            <span id="cart-count">0</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="bottom-header">
+        <div class="interface">
+          <nav>
+            <ul>
+              <li><a href="/index.html#home-destaques">Destaques</a></li>
+
+              <li>
+                <a href="/Branchs/floresTropicais.html">Flores Tropicais</a>
+              </li>
+
+              <li class="drop-hover">
+                <a href="/Branchs/assinaturas.html">Assinaturas Florais</a>
+              </li>
+
+              <li class="drop-hover">
+                <a href="/Branchs/presentes.html">Presentes Especiais</a>
+                <div class="drop">
+                  <a href="/Branchs/presentes.html">Flores c/ Bebidas</a>
+                  <a href="/Branchs/presentes.html">Flores c/ Chocolate</a>
+                  <a href="/Branchs/presentes.html">Flores c/ Pelúcia</a>
+                </div>
+              </li>
+
+              <li class="drop-hover">
+                <a href="#">Arranjos</a>
+                <div class="drop">
+                  <a href="#">Interior</a>
+                  <a href="#">Eventos</a>
+                </div>
+              </li>
+
+              <li class="drop-hover">
+                <a href="/Branchs/buques.html">Buquês</a>
+                <div class="drop">
+                  <a href="/Branchs/buques.html">Aniversário</a>
+                  <a href="/Branchs/buques.html">de Noiva</a>
+                  <a href="/Branchs/buques.html">Romântico</a>
+                </div>
+              </li>
+
+              <li><a href="/Branchs/faleConosco.html">Fale Conosco</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+    </header>
+
+    <section class="products-section">
+      <h1>ARRANJOS</h1>
+
+      <div class="filter-buttons">
+        <button class="btn" onclick="filterElements('Todos')">TODOS</button>
+        <button class="btn" onclick="filterElements('arranjoInteiror')">
+          INTERIOR
+        </button>
+        <button class="btn" onclick="filterElements('arranjoEventos')">
+          EVENTOS
+        </button>
+      </div>
+
+      <div class="product-container">
+        <div class="products arranjoEventos filter-show" data-name="arranjo1">
+          <img
+            src="/src/imagens/produtos/Arranjos/ArranjosEventos1.jpg"
+            alt=""
+          />
+          <h3>Arranjo Compaixão Eterna</h3>
+          <div class="product-price">R$ 296,90</div>
+        </div>
+
+        <div class="products arranjoEventos filter-show" data-name="arranjo2">
+          <img
+            src="/src/imagens/produtos/Arranjos/ArranjosEventos2.jpg"
+            alt=""
+          />
+          <h3>Arranjo Fortuna Brilhante</h3>
+          <div class="product-price">R$ 342,90</div>
+        </div>
+
+        <div class="products arranjoEventos filter-show" data-name="arranjo3">
+          <img
+            src="/src/imagens/produtos/Arranjos/ArranjosEventos3.jpg"
+            alt=""
+          />
+          <h3>Arranjo Elegância Cintilante</h3>
+          <div class="product-price">R$ 314,90</div>
+        </div>
+
+        <div class="products arranjoEventos filter-show" data-name="arranjo4">
+          <img
+            src="/src/imagens/produtos/Arranjos/ArranjosEventos4.jpg"
+            alt=""
+          />
+          <h3>Arranjo Graciosidade Simples</h3>
+          <div class="product-price">R$ 276,90</div>
+        </div>
+
+        <div class="products arranjoInteiror filter-show" data-name="arranjo5">
+          <img
+            src="/src/imagens/produtos/Arranjos/ArranjosInteriorAstromelia.jpg"
+            alt=""
+          />
+          <h3>Arranjo Interior com Astromélia</h3>
+          <div class="product-price">R$ 223,90</div>
+        </div>
+
+        <div class="products arranjoInteiror filter-show" data-name="arranjo6">
+          <img
+            src="/src/imagens/produtos/Arranjos/ArranjosInteriorAveImperador.jpg"
+            alt=""
+          />
+          <h3>Arranjo Interior com Ave do Imperador</h3>
+          <div class="product-price">
+            <p>de R$223,90</p>
+            por R$191,90
+          </div>
+        </div>
+
+        <div class="products arranjoInteiror filter-show" data-name="arranjo7">
+          <img
+            src="/src/imagens/produtos/Arranjos/ArranjosInteriorOrquídea.jpg"
+            alt=""
+          />
+          <h3>Arranjo Interior com Orquídea</h3>
+          <div class="product-price">R$ 223,90</div>
+        </div>
+
+        <div class="products arranjoInteiror filter-show" data-name="arranjo8">
+          <img
+            src="/src/imagens/produtos/Arranjos/ArranjosInteriorPrimavera.jpg"
+            alt=""
+          />
+          <h3>Arranjo Interior com Primavera</h3>
+          <div class="product-price">R$ 223,90</div>
+        </div>
+      </div>
+
+      <div class="products-preview">
+        <div class="preview" data-target="arranjo1">
+          <i class="fas fa-times"></i>
+          <img
+            src="/src/imagens/produtos/Arranjos/ArranjosEventos1.jpg"
+            alt=""
+          />
+          <h3>Arranjo Compaixão Eterna</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 274 )</span>
+          </div>
+          <p>
+            No floríssima não importa se é para eventos ou para seu próprio lar,
+            nossos arranjos trazem sofisticação deixando qualquer cômodo mais
+            lindo.
+          </p>
+          <div class="product-price">R$ 296,90</div>
+          <div class="preview-buttons">
+            <button
+              type="button"
+              class="cart-btn"
+              data-name="Arranjo Compaixão Eterna"
+              data-price="296.90"
+            >
+              Adicionar Ao Carrinho
+            </button>
+          </div>
+        </div>
+
+        <div class="preview" data-target="arranjo2">
+          <i class="fas fa-times"></i>
+          <img
+            src="/src/imagens/produtos/Arranjos/ArranjosEventos2.jpg"
+            alt=""
+          />
+          <h3>Arranjo Fortuna Brilhante</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 214 )</span>
+          </div>
+          <p>
+            No floríssima não importa se é para eventos ou para seu próprio lar,
+            nossos arranjos trazem sofisticação deixando qualquer cômodo mais
+            lindo.
+          </p>
+          <div class="product-price">R$ 342,90</div>
+          <div class="preview-buttons">
+            <button
+              type="button"
+              class="cart-btn"
+              data-name="Arranjo Fortuna Brilhante"
+              data-price="342.90"
+            >
+              Adicionar Ao Carrinho
+            </button>
+          </div>
+        </div>
+
+        <div class="preview" data-target="arranjo3">
+          <i class="fas fa-times"></i>
+          <img
+            src="/src/imagens/produtos/Arranjos/ArranjosEventos3.jpg"
+            alt=""
+          />
+          <h3>Arranjo Elegância Cintilante</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 274 )</span>
+          </div>
+          <p>
+            No floríssima não importa se é para eventos ou para seu próprio lar,
+            nossos arranjos trazem sofisticação deixando qualquer cômodo mais
+            lindo.
+          </p>
+          <div class="product-price">R$ 314,90</div>
+          <div class="preview-buttons">
+            <button
+              type="button"
+              class="cart-btn"
+              data-name="Arranjo Elegância Cintilante"
+              data-price="314.90"
+            >
+              Adicionar Ao Carrinho
+            </button>
+          </div>
+        </div>
+
+        <div class="preview" data-target="arranjo4">
+          <i class="fas fa-times"></i>
+          <img
+            src="/src/imagens/produtos/Arranjos/ArranjosEventos4.jpg"
+            alt=""
+          />
+          <h3>Arranjo Graciosidade Simples</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 186 )</span>
+          </div>
+          <p>
+            No floríssima não importa se é para eventos ou para seu próprio lar,
+            nossos arranjos trazem sofisticação deixando qualquer cômodo mais
+            lindo.
+          </p>
+          <div class="product-price">R$ 276,90</div>
+          <div class="preview-buttons">
+            <button
+              type="button"
+              class="cart-btn"
+              data-name="Arranjo Graciosidade Simples"
+              data-price="276.90"
+            >
+              Adicionar Ao Carrinho
+            </button>
+          </div>
+        </div>
+
+        <div class="preview" data-target="arranjo5">
+          <i class="fas fa-times"></i>
+          <img
+            src="/src/imagens/produtos/Arranjos/ArranjosInteriorAstromelia.jpg"
+            alt=""
+          />
+          <h3>Arranjo Interior com Astromélia</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 244 )</span>
+          </div>
+          <p>
+            No floríssima não importa se é para eventos ou para seu próprio lar,
+            nossos arranjos trazem sofisticação deixando qualquer cômodo mais
+            lindo.
+          </p>
+          <div class="product-price">R$ 223,90</div>
+          <div class="preview-buttons">
+            <button
+              type="button"
+              class="cart-btn"
+              data-name="Arranjo Interior com Astromélia"
+              data-price="223.90"
+            >
+              Adicionar Ao Carrinho
+            </button>
+          </div>
+        </div>
+
+        <div class="preview" data-target="arranjo6">
+          <i class="fas fa-times"></i>
+          <img
+            src="/src/imagens/produtos/Arranjos/ArranjosInteriorAveImperador.jpg"
+            alt=""
+          />
+          <h3>Arranjo Interior com Ave do Imperador</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 301 )</span>
+          </div>
+          <p>
+            No floríssima não importa se é para eventos ou para seu próprio lar,
+            nossos arranjos trazem sofisticação deixando qualquer cômodo mais
+            lindo.
+          </p>
+          <div class="product-price">
+            <p>de R$223,90</p>
+            por R$191,90
+          </div>
+          <div class="preview-buttons">
+            <button
+              type="button"
+              class="cart-btn"
+              data-name="Arranjo Interior com Ave do Imperador"
+              data-price="191.90"
+            >
+              Adicionar Ao Carrinho
+            </button>
+          </div>
+        </div>
+
+        <div class="preview" data-target="arranjo7">
+          <i class="fas fa-times"></i>
+          <img
+            src="/src/imagens/produtos/Arranjos/ArranjosInteriorOrquídea.jpg"
+            alt=""
+          />
+          <h3>Arranjo Interior com Orquídea</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 301 )</span>
+          </div>
+          <p>
+            No floríssima não importa se é para eventos ou para seu próprio lar,
+            nossos arranjos trazem sofisticação deixando qualquer cômodo mais
+            lindo.
+          </p>
+          <div class="product-price">R$ 223,90</div>
+          <div class="preview-buttons">
+            <button
+              type="button"
+              class="cart-btn"
+              data-name="Arranjo Interior com Orquídea"
+              data-price="223.90"
+            >
+              Adicionar Ao Carrinho
+            </button>
+          </div>
+        </div>
+
+        <div class="preview" data-target="arranjo8">
+          <i class="fas fa-times"></i>
+          <img
+            src="/src/imagens/produtos/Arranjos/ArranjosInteriorPrimavera.jpg"
+            alt=""
+          />
+          <h3>Arranjo Interior com Primavera</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 301 )</span>
+          </div>
+          <p>
+            No floríssima não importa se é para eventos ou para seu próprio lar,
+            nossos arranjos trazem sofisticação deixando qualquer cômodo mais
+            lindo.
+          </p>
+          <div class="product-price">R$ 223,90</div>
+          <div class="preview-buttons">
+            <button
+              type="button"
+              class="cart-btn"
+              data-name="Arranjo Interior com Primavera"
+              data-price="223.90"
+            >
+              Adicionar Ao Carrinho
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="modal-background-cart">
+        <div class="cart" id="cart">
+          <i class="fas fa-times" onclick="toggleCart(false)"></i>
+          <h3>Carrinho de Compras</h3>
+          <ul id="cart-items"></ul>
+          <p>Total: R$ <span id="cart-total">0.00</span></p>
+          <div class="buttonsCart">
+            <button type="button" onclick="clearCart()">Limpar Carrinho</button>
+            <button type="button" onclick="checkout()">Finalizar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <section class="top-footer">
+        <h1>FORMAS DE PAGAMENTO</h1>
+        <div class="formas-pag">
+          <img
+            src="/src/imagens/imagem_2024-11-24_215112298-removebg-preview.png"
+            alt="hipercard"
+            class="hipercard"
+          />
+          <img
+            src="/src/imagens/mastercard-removebg-preview.png"
+            alt="mastercard"
+            class="mastercard"
+          />
+          <img src="/src/imagens/visa_png-removebg-preview.png" alt="visa" />
+          <img src="/src/imagens/pix_png-removebg-preview.png" alt="pix" />
+          <img
+            src="/src/imagens/boleto_png-removebg-preview.png"
+            alt="boleto"
+          />
+        </div>
+      </section>
+      <hr />
+
+      <section class="bottom-footer">
+        <div class="logo-footer">
+          <a href="#">
+            <img
+              src="/src/imagens/Logo_Florissima-removebg-preview.png"
+              alt="logo rodapé"
+            />
+          </a>
+        </div>
+
+        <div class="footer-right">
+          <div class="footer-info">
+            <div class="parceiros">
+              <h3>Parceiros</h3>
+              <a href="#"> <p>Cooperativa Aldeia</p> </a>
+              <a href="https://www.novaflor.com.br" target="_blank">
+                <p>Floricultura Nova Flor</p>
+              </a>
+              <a href="https://www.giulianaflores.com.br" target="_blank">
+                <p>Giuliana Flores</p>
+              </a>
+              <a href="https://www.moradadapaz.com.br" target="_blank">
+                <p>Morada da Paz</p>
+              </a>
+            </div>
+            <div class="footer-links">
+              <h3>Links</h3>
+              <a href="/Branchs/equipe.html"> <p>Nossa Equipe</p> </a>
+              <a href="/Branchs/faleConosco.html"> <p>Contato</p> </a>
+              <a href="/Branchs/termosUso.html"> <p>Termos de Uso</p> </a>
+              <a href="/Branchs/privacidade.html">
+                <p>Política de Privacidade</p>
+              </a>
+            </div>
+          </div>
+          <div class="footer-socials">
+            <h3>Siga-nos</h3>
+            <ul class="redes-sociais">
+              <li>
+                <a
+                  href="https://www.facebook.com"
+                  title="Vá para o nosso Facebook"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-facebook"></i>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.instagram.com"
+                  title="Vá para o nosso Instagram"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://www.youtube.com"
+                  title="Vá para o nosso Youtube"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget("https://vlibras.gov.br/app");
+    </script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/146c12905d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/src/js/script.js" defer></script>
+  </body>
+</html>
